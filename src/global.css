@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+:root {
+  --primary: #e2d703;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .container {
+    max-width: 720px;
+  }
+}
