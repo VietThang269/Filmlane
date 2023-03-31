@@ -18,13 +18,60 @@
   </head>
   <body>
     <header id="header">
-      <div class="header_logo">
-        <img src="./assets/icons/logo.svg" alt="" />
+      <div class="container">
+        <div class="header_logo">
+          <img src="./assets/icons/logo.svg" alt="" class="logo" />
+        </div>
+        <div class="header_navbar">
+          <a href="#">HOME</a>
+          <a href="#">MOVIE</a>
+          <a href="#">TV SHOW</a>
+          <a href="#">WEB SERIES</a>
+          <a href="#">PRICING</a>
+        </div>
+        <div class="header_actions">
+          <img
+            src="./assets/icons/icon_search.svg"
+            alt=""
+            class="icon_search"
+          />
+          <div class="divider"></div>
+          <div class="select_country_wrapper">
+            <img
+              src="./assets//icons/icon_earth.svg"
+              alt=""
+              class="icon_earth"
+            />
+            <select name="Select Country" id="select_country">
+              <option value="en">EN</option>
+              <option value="au">AU</option>
+              <option value="ar">AR</option>
+              <option value="tu">TU</option>
+            </select>
+          </div>
+          <button class="btn_outline">SIGN IN</button>
+        </div>
       </div>
-      <div class="header_navbar"></div>
-      <div class="header_actions"></div>
     </header>
-    <main></main>
+    <main>
+      <div class="section_hero">
+        <div class="container">
+          <div class="section_hero_container">
+            <p class="hero_subtitle">Filmlane</p>
+            <h1 class="hero_title">
+              Unlimited <span> Movie </span> , <br />
+              TVs Shows, & More.
+            </h1>
+            <div class="hero_des">
+              <div class="badge_fill">PG 18</div>
+              <div class="badge_outline">HD</div>
+            </div>
+            <button class="btn_outline">WATCH NOW</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>FOOTER</footer>
+    <script src="./assets/js/global.js"></script>
   </body>
 </html>

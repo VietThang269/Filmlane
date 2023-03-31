@@ -1,0 +1,37 @@
+.section_hero {
+  background: url(../images/hero-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 100px 0;
+}
+
+.section_hero_container {
+  margin-top: 50px;
+}
+
+.hero_subtitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.hero_title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero_title span {
+  color: var(--primary);
+}
+
+.hero_des {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.section_hero_container .btn_outline {
+  padding: 15px 40px;
+}
