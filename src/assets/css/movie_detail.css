@@ -1,0 +1,15 @@
+.movie-detail-banner {
+    max-width: 300px;
+}
+
+.movie-detail-banner img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.movie-detail {
+    background: url(../images/movie-detail-bg.png) no-repeat;
+    
+}
