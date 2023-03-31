@@ -179,10 +179,56 @@ a {
   flex-direction: column;
   height: 100%;
   max-width: 265px;
+  gap: 10px;
 }
 
 .movie_item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie_title_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie_title_wrapper .movie_title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.movie_title_wrapper .movie_time {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.movie_meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie_meta_right {
+  gap: 15px;
+}
+
+.movie_meta_right,
+.movie_meta_duration,
+.movie_meta_rate {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.movie_meta_rate p,
+.movie_meta_duration p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
 }
