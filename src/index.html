@@ -44,7 +44,7 @@
             </select>
           </div>
         </div>
-        <button class="btn_outline">SIGN IN</button>
+        <button class="btn_outline btn_signIn">SIGN IN</button>
         <img src="./assets/icons/hamburger.svg" alt="" class="hamburger_nav" style="width: 40px; height: 40px;">
       </div>
 
@@ -659,6 +659,48 @@
   </footer>
   <div class="overlay"></div>
 
+  <div id="sign_in">
+    <p class="sign_in_title">Sign in</p>
+    <div class="sign_in_container">
+      <div class="sign_in_left">
+        <form action="" id="form_signIn">
+          <input type="email" id="email_input" placeholder="Email">
+          <input type="password" id="password_input" placeholder="Password">
+          <p>Don’t have account? <span class="nav_sign_up">Sign up</span></p>
+
+          <button class="btn_outline" type="submit">Sign in</button>
+        </form>
+      </div>
+
+      <div class="sign_in_right">
+        <button class="btn_facebook">Login with Facebook</button>
+        <button class="btn_twitter">Login with Twitter</button>
+        <button class="btn_google">Login with Google+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="sign_up">
+    <p class="sign_up_title">Sign up</p>
+    <div class="sign_up_container">
+      <div class="sign_up_left">
+        <form action="" id="form_signUp">
+          <input type="email" id="email_input" placeholder="Email">
+          <input type="password" id="password_input" placeholder="Password">
+          <input type="password" id="confirm_password_input" placeholder="Confirm Password">
+          <p>Has account? <span class="nav_sign_in"> Sign in</span></p>
+
+          <button class="btn_outline" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="sign_up_right">
+        <button class="btn_facebook">Login with Facebook</button>
+        <button class="btn_twitter">Login with Twitter</button>
+        <button class="btn_google">Login with Google+</button>
+      </div>
+    </div>
+  </div>
   <script src="./assets/js/global.js"></script>
 </body>
 

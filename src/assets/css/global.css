@@ -40,7 +40,7 @@ a {
   background: hsla(204, 18%, 11%, 0.8);
   opacity: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 .overlay.active {
@@ -347,6 +347,105 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Sign in, Sign up */
+#sign_up,
+#sign_in {
+  display: none;
+  position: fixed;
+  background-color: var(--primary2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 550px;
+  min-height: 300px;
+  z-index: 11;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sign_up_title,
+.sign_in_title {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.sign_up_container,
+.sign_in_container {
+  display: flex;
+  height: 100%;
+  gap: 15px;
+}
+
+#form_signUp,
+#form_signIn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form_signUp input,
+#form_signIn input {
+  padding: 15px 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#sign_up.active,
+#sign_in.active {
+  display: block;
+}
+
+.sign_up_left,
+.sign_in_left {
+  flex: 3;
+}
+
+.sign_up_right,
+.sign_in_right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn_facebook {
+  padding: 10px 0;
+  background-color: #2d518e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.btn_twitter {
+  padding: 10px 0;
+  background-color: #4fa9f0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.btn_google {
+  padding: 10px 0;
+  background-color: #e85836;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.nav_sign_in,
+.nav_sign_up {
+  text-decoration: underline;
+  color: var(--primary);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px) {
