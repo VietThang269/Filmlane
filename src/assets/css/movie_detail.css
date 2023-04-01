@@ -39,3 +39,44 @@
 .hero_des a:is(:hover, :focus) {
     color: var(--primary);
 }
+
+.section_series {
+    background: url(../images/tv-series-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.section_series .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.series_subtitle,
+.top_subtitle {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.series_title,
+.top_title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.series_content,
+.top_content {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
