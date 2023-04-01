@@ -76,6 +76,7 @@ a {
   width: 100%;
   padding: 25px 0;
   position: fixed;
+  z-index: 9;
 }
 
 #header.header_active {
@@ -189,6 +190,9 @@ a {
   border-radius: 10px;
   overflow: hidden;
 }
+.movie_item img:hover {
+  transform: scale(1.05);
+}
 
 .movie_title_wrapper {
   display: flex;
@@ -231,4 +235,59 @@ a {
   font-size: 13px;
   font-weight: 500;
   color: #fff;
+}
+
+/* Footer */
+.footer_top {
+  background: url(../images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.footer_top .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_top_brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_top_quicklink a,
+.footer_top_brand_link a {
+  color: #cecaca;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.footer_top_quicklink a:hover,
+.footer_top_brand_link a:hover {
+  color: var(--primary);
+}
+
+.footer_top .divider {
+  height: 4px;
+  margin-block: 40px;
+  border-top: 1px solid var(--rich-black-fogra-29);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.footer_bottom {
+  padding: 15px 0;
+  background-color: var(--primary2);
+}
+
+.footer_bottom_left p {
+  color: #fff;
+}
+
+.footer_bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
