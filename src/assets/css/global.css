@@ -34,6 +34,20 @@ a {
   margin-right: auto;
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: hsla(204, 18%, 11%, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .btn_outline {
   font-size: 14px;
   font-weight: 700;
@@ -59,18 +73,6 @@ a {
   border: 2px solid var(--primary3);
 }
 
-@media only screen and (max-width: 1024px) {
-  .container {
-    max-width: 980px;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
 /* Header */
 #header {
   width: 100%;
@@ -94,7 +96,7 @@ a {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  padding: 15px 30px;
+  padding: 15px;
 }
 .header_navbar a:is(:hover, :focus) {
   color: var(--primary);
@@ -105,6 +107,11 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+}
+
+.header_actions_list {
+  display: flex;
+  gap: 10px;
 }
 
 .header_actions .divider {
@@ -129,6 +136,56 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+}
+
+.hamburger_nav {
+  display: none;
+  cursor: pointer;
+}
+
+.header_navbar_mobile {
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--primary2);
+  height: 100%;
+  min-width: 300px;
+}
+
+.header_navbar_mobile_top {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+.header_navbar_mobile_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.header_navbar_mobile_content a {
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header_navbar_mobile_content a:hover {
+  color: var(--primary);
+}
+
+.close_navbar_mobile {
+  cursor: pointer;
+}
+
+.header_navbar_mobile_content a {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+.header_navbar_mobile_content a:first-child {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
 /* Badge */
@@ -290,4 +347,36 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 980px;
+  }
+
+  .header_navbar {
+    display: none;
+  }
+
+  .hamburger_nav {
+    display: block;
+  }
+
+  .header_navbar_mobile.active {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header_actions {
+    gap: 10px;
+  }
+
+  .header_actions_list {
+    display: none;
+  }
 }

@@ -31,6 +31,7 @@
   margin-top: 10px;
   margin-bottom: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero_des a {
@@ -332,7 +333,6 @@
 
 .cta_right {
   background-color: #fff;
-  min-width: 460px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -359,4 +359,80 @@
   border: 2px solid hsl(207, 19%, 11%);
   padding: 15px 34px;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_service .container {
+    flex-direction: column;
+  }
+
+  .service_card {
+    flex-wrap: wrap;
+  }
+
+  .top_filter {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .section_cta .container {
+    flex-wrap: wrap;
+  }
+
+  .footer_top_brand {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .hero_subtitle {
+    font-size: 24px;
+  }
+
+  .hero_des a {
+    font-size: 14px;
+  }
+
+  .hero_title {
+    font-size: 36px;
+  }
+
+  .upcoming_title {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .upcoming_left_subtitle {
+    text-align: center;
+  }
+
+  .upcoming_left_title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .series_title,
+  .top_title,
+  .service_right_title p {
+    font-size: 32px;
+  }
+
+  #header .btn_outline {
+    padding: 10px;
+  }
+
+  .cta_left_subtilte,
+  .cta_left_title {
+    text-align: center;
+  }
+
+  .cta_left {
+    margin-bottom: 20px;
+  }
+
+  .footer_bottom .container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
