@@ -1,705 +1,949 @@
 <!DOCTYPE html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmlane</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filmlane</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/global.css" />
-</head>
-
-<body>
-  <header id="header">
-    <div class="container">
-      <div class="header_logo">
-        <img src="./assets/icons/logo.svg" alt="" class="logo" />
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header_logo">
+          <img src="./assets/icons/logo.svg" alt="" class="logo" />
+        </div>
+        <div class="header_navbar">
+          <a href="#">HOME</a>
+          <a href="#">MOVIE</a>
+          <a href="#">TV SHOW</a>
+          <a href="#">WEB SERIES</a>
+          <a href="#">PRICING</a>
+        </div>
+        <div class="header_actions">
+          <div class="header_actions_list">
+            <img
+              src="./assets/icons/icon_search.svg"
+              alt=""
+              class="icon_search"
+            />
+            <div class="divider"></div>
+            <div class="select_country_wrapper">
+              <img
+                src="./assets//icons/icon_earth.svg"
+                alt=""
+                class="icon_earth"
+              />
+              <select name="Select Country" id="select_country">
+                <option value="en">EN</option>
+                <option value="au">AU</option>
+                <option value="ar">AR</option>
+                <option value="tu">TU</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn_outline btn_signIn">SIGN IN</button>
+          <button class="btn_outline" id="logout">LogOut</button>
+          <img
+            src="./assets/icons/hamburger.svg"
+            alt=""
+            class="hamburger_nav"
+            style="width: 40px; height: 40px"
+          />
+        </div>
       </div>
-      <div class="header_navbar">
+    </header>
+    <main>
+      <section class="section_hero">
+        <div class="container">
+          <div class="section_hero_container">
+            <p class="hero_subtitle">Filmlane</p>
+            <h1 class="hero_title">
+              Unlimited <span> Movie </span> , <br />
+              TVs Shows, & More.
+            </h1>
+            <div class="hero_des">
+              <div class="badge_fill">PG 18</div>
+              <div class="badge_outline">HD</div>
+              <a href="#">Romance,</a>
+              <a href="#">Drama</a>
+
+              <div class="calendar_des">
+                <img src="./assets/icons/calendar.svg" alt="" />
+                <p>2022</p>
+              </div>
+
+              <div class="time_des">
+                <img src="./assets/icons/icon_clock.svg" alt="" />
+                <p>128 min</p>
+              </div>
+            </div>
+            <button class="btn_outline">WATCH NOW</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_upcoming">
+        <div class="container">
+          <div class="upcoming_title">
+            <div class="upcoming_left">
+              <p class="upcoming_left_subtitle">ONLINE STREAMING</p>
+              <p class="upcoming_left_title">Upcoming Movies</p>
+            </div>
+            <div class="upcoming_right">
+              <button class="btn_filter">Movies</button>
+              <button class="btn_filter">TV Shows</button>
+              <button class="btn_filter">Anime</button>
+            </div>
+          </div>
+
+          <div class="upcoming_content">
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_service">
+        <div class="container">
+          <div class="service_left">
+            <figure>
+              <img src="./assets/images/service-banner.jpg" alt="" />
+            </figure>
+            <a href="./assets/images/service-banner.jpg" class="btn_service"
+              ><span> DOWNLOAD </span></a
+            >
+          </div>
+          <div class="service_right">
+            <div class="service_right_subtitle">
+              <div></div>
+              <p>OUR SERVICES</p>
+            </div>
+            <div class="service_right_title">
+              <p>Download Your Shows Watch Offline.</p>
+            </div>
+            <div class="service_right_content">
+              <p>
+                Lorem ipsum dolor sit amet, consecetur adipiscing elseddo
+                eiusmod tempor.There are many variations of passages of lorem
+                Ipsum available, but the majority have suffered alteration in
+                some injected humour.
+              </p>
+            </div>
+            <div class="service_right_list">
+              <div class="service_card">
+                <div class="service_card_left">
+                  <img
+                    src="./assets/icons/icon_television.svg"
+                    alt=""
+                    style="width: 40px; height: 40px"
+                  />
+                </div>
+                <div class="service_card_right">
+                  <p class="service_card_right_subtile">Enjoy on Your TV.</p>
+                  <p class="service_card_right_title">
+                    Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div class="service_card">
+                <div class="service_card_left">
+                  <img
+                    src="./assets/icons/icon_video.svg"
+                    alt=""
+                    style="width: 40px; height: 40px"
+                  />
+                </div>
+                <div class="service_card_right">
+                  <p class="service_card_right_subtile">Watch Everywhere.</p>
+                  <p class="service_card_right_title">
+                    Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_top">
+        <div class="container">
+          <div class="top_desc">
+            <p class="top_subtitle">ONLINE STREAMING</p>
+            <p class="top_title">Top Rated Movies</p>
+          </div>
+
+          <div class="top_filter">
+            <button class="btn_filter">MOVIES</button>
+            <button class="btn_filter">TV Shows</button>
+            <button class="btn_filter">Documentary</button>
+            <button class="btn_filter">Sports</button>
+          </div>
+
+          <div class="top_content">
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_series">
+        <div class="container">
+          <div class="series_desc">
+            <div class="series_subtitle">BEST TV SERIES</div>
+            <div class="series_title">World Best TV Series</div>
+          </div>
+
+          <div class="series_content">
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie_item">
+              <a href="#" class="movie_item_link">
+                <img
+                  src="./assets/images/upcoming-1.png"
+                  alt=""
+                  class="movie_item_img"
+                />
+              </a>
+
+              <div class="movie_title_wrapper">
+                <a href="#" class="movie_title">The Northman</a>
+                <p class="movie_time">2022</p>
+              </div>
+
+              <div class="movie_meta">
+                <div class="badge_outline">HD</div>
+
+                <div class="movie_meta_right">
+                  <div class="movie_meta_duration">
+                    <img
+                      src="./assets/icons/icon_clock.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>137 min</p>
+                  </div>
+                  <div class="movie_meta_rate">
+                    <img
+                      src="./assets/icons/star-fill.svg"
+                      alt=""
+                      style="width: 13px; height: 13px"
+                    />
+                    <p>8.5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_cta">
+        <div class="container">
+          <div class="cta_left">
+            <p class="cta_left_title">TRIAL START FIRST 30 DAYS.</p>
+            <p class="cta_left_subtilte">
+              Enter your email to create or restart your membership.
+            </p>
+          </div>
+          <div class="cta_right">
+            <input
+              type="email"
+              class="cta_right_input"
+              placeholder="Enter your email"
+            />
+            <button class="btn_form_cta">GET STARTED</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer_top">
+        <div class="container">
+          <div class="footer_top_brand">
+            <img src="./assets/icons/logo.svg" alt="" />
+            <div class="footer_top_brand_link">
+              <a href="">HOME</a>
+              <a href="">MOVIE</a>
+              <a href="">TVSHOW</a>
+              <a href="">WEB SERIES</a>
+              <a href="">PRICING</a>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="footer_top_quicklink">
+            <a href="">FAQ</a>
+            <a href="">HELP CENTER</a>
+            <a href="">TERM OF USE</a>
+            <a href="">PRIVACY</a>
+          </div>
+        </div>
+      </section>
+      <section class="footer_bottom">
+        <div class="container">
+          <div class="footer_bottom_left">
+            <p>© 2023</p>
+          </div>
+          <div class="footer_bottom_right">
+            <img src="./assets/images/footer-bottom-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
+    <div class="overlay"></div>
+    <div class="header_navbar_mobile">
+      <div class="header_navbar_mobile_top">
+        <img src="./assets/icons/logo.svg" alt="" />
+        <img
+          src="./assets/icons/close.svg"
+          alt=""
+          class="close_navbar_mobile"
+        />
+      </div>
+      <div class="header_navbar_mobile_content">
         <a href="#">HOME</a>
         <a href="#">MOVIE</a>
         <a href="#">TV SHOW</a>
         <a href="#">WEB SERIES</a>
         <a href="#">PRICING</a>
       </div>
-      <div class="header_actions">
-        <div class="header_actions_list">
-          <img src="./assets/icons/icon_search.svg" alt="" class="icon_search" />
-          <div class="divider"></div>
-          <div class="select_country_wrapper">
-            <img src="./assets//icons/icon_earth.svg" alt="" class="icon_earth" />
-            <select name="Select Country" id="select_country">
-              <option value="en">EN</option>
-              <option value="au">AU</option>
-              <option value="ar">AR</option>
-              <option value="tu">TU</option>
-            </select>
-          </div>
+    </div>
+    <div id="sign_in">
+      <p class="sign_in_title">Sign in</p>
+      <div class="sign_in_container">
+        <div class="sign_in_left">
+          <form action="" id="form_signIn">
+            <input type="email" id="email_input" placeholder="Email" />
+            <input type="password" id="password_input" placeholder="Password" />
+            <p>Don’t have account? <span class="nav_sign_up">Sign up</span></p>
+
+            <button class="btn_outline" type="submit">Sign in</button>
+          </form>
         </div>
-        <button class="btn_outline btn_signIn">SIGN IN</button>
-        <img src="./assets/icons/hamburger.svg" alt="" class="hamburger_nav" style="width: 40px; height: 40px" />
+
+        <div class="sign_in_right">
+          <button class="btn_facebook" id="login_with_facebook">
+            Login with Facebook
+          </button>
+          <button class="btn_twitter" id="login_with_twitter">
+            Login with Twitter
+          </button>
+          <button class="btn_google" id="login_with_google">
+            Login with Google+
+          </button>
+        </div>
       </div>
     </div>
-  </header>
-  <main>
-    <section class="section_hero">
-      <div class="container">
-        <div class="section_hero_container">
-          <p class="hero_subtitle">Filmlane</p>
-          <h1 class="hero_title">
-            Unlimited <span> Movie </span> , <br />
-            TVs Shows, & More.
-          </h1>
-          <div class="hero_des">
-            <div class="badge_fill">PG 18</div>
-            <div class="badge_outline">HD</div>
-            <a href="#">Romance,</a>
-            <a href="#">Drama</a>
 
-            <div class="calendar_des">
-              <img src="./assets/icons/calendar.svg" alt="" />
-              <p>2022</p>
-            </div>
+    <div id="sign_up">
+      <p class="sign_up_title">Sign up</p>
+      <div class="sign_up_container">
+        <div class="sign_up_left">
+          <form action="" id="form_signUp">
+            <input type="email" id="email_signUp_input" placeholder="Email" />
+            <input
+              type="password"
+              id="password_signUp_input"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              id="confirm_password_signUp_input"
+              placeholder="Confirm Password"
+            />
+            <p>Has account? <span class="nav_sign_in"> Sign in</span></p>
 
-            <div class="time_des">
-              <img src="./assets/icons/icon_clock.svg" alt="" />
-              <p>128 min</p>
-            </div>
-          </div>
-          <button class="btn_outline">WATCH NOW</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_upcoming">
-      <div class="container">
-        <div class="upcoming_title">
-          <div class="upcoming_left">
-            <p class="upcoming_left_subtitle">ONLINE STREAMING</p>
-            <p class="upcoming_left_title">Upcoming Movies</p>
-          </div>
-          <div class="upcoming_right">
-            <button class="btn_filter">Movies</button>
-            <button class="btn_filter">TV Shows</button>
-            <button class="btn_filter">Anime</button>
-          </div>
+            <button class="btn_outline" type="submit">Sign Up</button>
+          </form>
         </div>
 
-        <div class="upcoming_content">
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="sign_up_right">
+          <button class="btn_facebook" id="signup_with_facebook">
+            Login with Facebook
+          </button>
+          <button class="btn_twitter" id="signup_with_facebook">
+            Login with Twitter
+          </button>
+          <button class="btn_google" id="signup_with_facebook">
+            Login with Google+
+          </button>
         </div>
-      </div>
-    </section>
-
-    <section class="section_service">
-      <div class="container">
-        <div class="service_left">
-          <figure>
-            <img src="./assets/images/service-banner.jpg" alt="" />
-          </figure>
-          <a href="./assets/images/service-banner.jpg" class="btn_service"><span> DOWNLOAD </span></a>
-        </div>
-        <div class="service_right">
-          <div class="service_right_subtitle">
-            <div></div>
-            <p>OUR SERVICES</p>
-          </div>
-          <div class="service_right_title">
-            <p>Download Your Shows Watch Offline.</p>
-          </div>
-          <div class="service_right_content">
-            <p>
-              Lorem ipsum dolor sit amet, consecetur adipiscing elseddo
-              eiusmod tempor.There are many variations of passages of lorem
-              Ipsum available, but the majority have suffered alteration in
-              some injected humour.
-            </p>
-          </div>
-          <div class="service_right_list">
-            <div class="service_card">
-              <div class="service_card_left">
-                <img src="./assets/icons/icon_television.svg" alt="" style="width: 40px; height: 40px" />
-              </div>
-              <div class="service_card_right">
-                <p class="service_card_right_subtile">Enjoy on Your TV.</p>
-                <p class="service_card_right_title">
-                  Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
-              </div>
-            </div>
-            <div class="service_card">
-              <div class="service_card_left">
-                <img src="./assets/icons/icon_video.svg" alt="" style="width: 40px; height: 40px" />
-              </div>
-              <div class="service_card_right">
-                <p class="service_card_right_subtile">Watch Everywhere.</p>
-                <p class="service_card_right_title">
-                  Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_top">
-      <div class="container">
-        <div class="top_desc">
-          <p class="top_subtitle">ONLINE STREAMING</p>
-          <p class="top_title">Top Rated Movies</p>
-        </div>
-
-        <div class="top_filter">
-          <button class="btn_filter">MOVIES</button>
-          <button class="btn_filter">TV Shows</button>
-          <button class="btn_filter">Documentary</button>
-          <button class="btn_filter">Sports</button>
-        </div>
-
-        <div class="top_content">
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_series">
-      <div class="container">
-        <div class="series_desc">
-          <div class="series_subtitle">BEST TV SERIES</div>
-          <div class="series_title">World Best TV Series</div>
-        </div>
-
-        <div class="series_content">
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_cta">
-      <div class="container">
-        <div class="cta_left">
-          <p class="cta_left_title">TRIAL START FIRST 30 DAYS.</p>
-          <p class="cta_left_subtilte">
-            Enter your email to create or restart your membership.
-          </p>
-        </div>
-        <div class="cta_right">
-          <input type="email" class="cta_right_input" placeholder="Enter your email" />
-          <button class="btn_form_cta">GET STARTED</button>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <section class="footer_top">
-      <div class="container">
-        <div class="footer_top_brand">
-          <img src="./assets/icons/logo.svg" alt="" />
-          <div class="footer_top_brand_link">
-            <a href="">HOME</a>
-            <a href="">MOVIE</a>
-            <a href="">TVSHOW</a>
-            <a href="">WEB SERIES</a>
-            <a href="">PRICING</a>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="footer_top_quicklink">
-          <a href="">FAQ</a>
-          <a href="">HELP CENTER</a>
-          <a href="">TERM OF USE</a>
-          <a href="">PRIVACY</a>
-        </div>
-      </div>
-    </section>
-    <section class="footer_bottom">
-      <div class="container">
-        <div class="footer_bottom_left">
-          <p>© 2023</p>
-        </div>
-        <div class="footer_bottom_right">
-          <img src="./assets/images/footer-bottom-img.png" alt="" />
-        </div>
-      </div>
-    </section>
-  </footer>
-  <div class="overlay"></div>
-  <div class="header_navbar_mobile">
-    <div class="header_navbar_mobile_top">
-      <img src="./assets/icons/logo.svg" alt="" />
-      <img src="./assets/icons/close.svg" alt="" class="close_navbar_mobile" />
-    </div>
-    <div class="header_navbar_mobile_content">
-      <a href="#">HOME</a>
-      <a href="#">MOVIE</a>
-      <a href="#">TV SHOW</a>
-      <a href="#">WEB SERIES</a>
-      <a href="#">PRICING</a>
-    </div>
-  </div>
-  <div id="sign_in">
-    <p class="sign_in_title">Sign in</p>
-    <div class="sign_in_container">
-      <div class="sign_in_left">
-        <form action="" id="form_signIn">
-          <input type="email" id="email_input" placeholder="Email" />
-          <input type="password" id="password_input" placeholder="Password" />
-          <p>Don’t have account? <span class="nav_sign_up">Sign up</span></p>
-
-          <button class="btn_outline" type="submit">Sign in</button>
-        </form>
-      </div>
-
-      <div class="sign_in_right">
-        <button class="btn_facebook">Login with Facebook</button>
-        <button class="btn_twitter">Login with Twitter</button>
-        <button class="btn_google">Login with Google+</button>
       </div>
     </div>
-  </div>
 
-  <div id="sign_up">
-    <p class="sign_up_title">Sign up</p>
-    <div class="sign_up_container">
-      <div class="sign_up_left">
-        <form action="" id="form_signUp">
-          <input type="email" id="email_input" placeholder="Email" />
-          <input type="password" id="password_input" placeholder="Password" />
-          <input type="password" id="confirm_password_input" placeholder="Confirm Password" />
-          <p>Has account? <span class="nav_sign_in"> Sign in</span></p>
-
-          <button class="btn_outline" type="submit">Sign Up</button>
-        </form>
-      </div>
-
-      <div class="sign_up_right">
-        <button class="btn_facebook">Login with Facebook</button>
-        <button class="btn_twitter">Login with Twitter</button>
-        <button class="btn_google">Login with Google+</button>
-      </div>
-    </div>
-  </div>
-  <script src="./assets/js/global.js"></script>
-</body>
-
+    <script src="./assets/js/global.js" type="module"></script>
+  </body>
 </html>

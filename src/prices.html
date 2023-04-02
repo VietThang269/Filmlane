@@ -45,6 +45,7 @@
             </div>
           </div>
           <button class="btn_outline btn_signIn">SIGN IN</button>
+          <button class="btn_outline" id="logout">LogOut</button>
           <img
             src="./assets/icons/hamburger.svg"
             alt=""
@@ -199,11 +200,15 @@
       <div class="sign_up_container">
         <div class="sign_up_left">
           <form action="" id="form_signUp">
-            <input type="email" id="email_input" placeholder="Email" />
-            <input type="password" id="password_input" placeholder="Password" />
+            <input type="email" id="email_signUp_input" placeholder="Email" />
             <input
               type="password"
-              id="confirm_password_input"
+              id="password_signUp_input"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              id="confirm_password_signUp_input"
               placeholder="Confirm Password"
             />
             <p>Has account? <span class="nav_sign_in"> Sign in</span></p>
@@ -219,6 +224,6 @@
         </div>
       </div>
     </div>
-    <script src="./assets/js/global.js"></script>
+    <script src="./assets/js/global.js" type="module"></script>
   </body>
 </html>
