@@ -73,6 +73,18 @@ a {
   border: 2px solid var(--primary3);
 }
 
+#logout {
+  display: none;
+}
+
+#logout.active {
+  display: block;
+}
+
+.btn_signIn.active {
+  display: none;
+}
+
 /* Header */
 #header {
   width: 100%;
