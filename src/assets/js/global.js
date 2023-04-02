@@ -107,15 +107,23 @@ const logout = document.getElementById("logout");
 
 signUpForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  /*
-    password length > 6,
-    password equal confirm password
-  */
+
   const email = document.getElementById("email_signUp_input").value;
   const password = document.getElementById("password_signUp_input").value;
   const confirmPassword = document.getElementById(
     "confirm_password_signUp_input"
   ).value;
+
+  // Validate
+  if (password.length < 6) {
+    alert("Min length password is 6 !");
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    alert("Password and confrim password not equal !");
+    return;
+  }
 
   // Move on with Auth
   createUserWithEmailAndPassword(auth, email, password)
