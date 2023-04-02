@@ -1,8 +1,63 @@
-.movie-detail .container{
+.movie-detail .container {
     position: relative;
     display: flex;
     align-items: center;
     gap: 50px;
+}
+
+.detail-subtitle {
+    width: 239px;
+    height: 36px;
+    left: 508px;
+    top: 153px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #F8F800;
+}
+
+.detail-title {
+    width: 382px;
+    height: 78px;
+    left: 508px;
+    top: 189px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.storyline {
+    width: 523px;
+    height: 44px;
+    left: 508px;
+    top: 363px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
 }
 
 .movie-detail-banner {
@@ -21,6 +76,20 @@
     padding: 160px 0px;
 
 }
+
+.details-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    max-width: 460px;
+    background: #242C38;
+    padding: 25px;
+    border: 1px solid var(--jet);
+    border-radius: 4px;
+}
+
+
 
 .hero_des {
     display: flex;
@@ -51,7 +120,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .series_subtitle,
@@ -79,4 +148,113 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 50px;
+}
+
+.section_comment {
+    background:   #1a1e2a;
+    
+}
+
+.section_comment h1 {
+    width: 520px;
+    height: 85.29px;
+    left: 117px;
+    top: 1535px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.section_comment input {
+    width: 1153px;
+    height: 87.07px;
+    left: 117px;
+    top: 1675.38px;
+    background: #1D1D21;
+    border-radius: 50px;
+    padding-left: 50px;
+    border: #FFFFFF;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.list-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.item-comment {
+    display: flex;
+    
+}
+
+.item-comment img {
+    width: 120px;
+    height: 106.62px;
+    left: 127px;
+    top: 1837.97px;
+}
+
+.item-comment h1 {
+    width: 176px;
+    height: 31.98px;
+    left: 346px;
+    top: 1837.97px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.item-comment .time-comment {
+    width: 256px;
+    height: 31.98px;
+    left: 542px;
+    top: 1837.97px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #595A5D;
+}
+
+.item-comment .text-comment {
+    width: 100%;
+    height: 31.98px;
+    left: 346px;
+    top: 2060.97px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.people-comment{
+    display: flex;
+    margin-left: 40px;
+    flex-wrap: wrap;
 }
