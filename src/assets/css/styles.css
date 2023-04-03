@@ -378,11 +378,6 @@
   .section_cta .container {
     flex-wrap: wrap;
   }
-
-  .footer_top_brand {
-    flex-direction: column;
-    gap: 20px;
-  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -418,10 +413,6 @@
     font-size: 32px;
   }
 
-  #header .btn_outline {
-    padding: 10px;
-  }
-
   .cta_left_subtilte,
   .cta_left_title {
     text-align: center;
@@ -429,10 +420,5 @@
 
   .cta_left {
     margin-bottom: 20px;
-  }
-
-  .footer_bottom .container {
-    flex-direction: column;
-    gap: 10px;
   }
 }

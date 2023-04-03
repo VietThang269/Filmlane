@@ -1,4 +1,4 @@
-.Movie {
+.web_series {
   display: flex;
   background: url(../images/image18.png) no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.Movie h1 {
+.web_series h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;

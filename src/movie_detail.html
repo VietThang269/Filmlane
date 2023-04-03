@@ -22,21 +22,31 @@
   <header id="header">
     <div class="container">
       <div class="header_logo">
-        <img src="./assets/icons/logo.svg" alt="" class="logo" />
+        <a href="index.html">
+          <img src="./assets/icons/logo.svg" alt="" class="logo" />
+        </a>
       </div>
       <div class="header_navbar">
-        <a href="#">HOME</a>
-        <a href="#">MOVIE</a>
-        <a href="#">TV SHOW</a>
-        <a href="#">WEB SERIES</a>
-        <a href="#">PRICING</a>
+        <a href="index.html">HOME</a>
+        <a href="movie.html">MOVIE</a>
+        <a href="TVShow.html">TV SHOW</a>
+        <a href="WebSeries.html">WEB SERIES</a>
+        <a href="prices.html">PRICING</a>
       </div>
       <div class="header_actions">
         <div class="header_actions_list">
-          <img src="./assets/icons/icon_search.svg" alt="" class="icon_search" />
+          <img
+            src="./assets/icons/icon_search.svg"
+            alt=""
+            class="icon_search"
+          />
           <div class="divider"></div>
           <div class="select_country_wrapper">
-            <img src="./assets//icons/icon_earth.svg" alt="" class="icon_earth" />
+            <img
+              src="./assets//icons/icon_earth.svg"
+              alt=""
+              class="icon_earth"
+            />
             <select name="Select Country" id="select_country">
               <option value="en">EN</option>
               <option value="au">AU</option>
@@ -46,10 +56,14 @@
           </div>
         </div>
         <button class="btn_outline btn_signIn">SIGN IN</button>
-        <img src="./assets/icons/hamburger.svg" alt="" class="hamburger_nav" style="width: 40px; height: 40px;">
+        <button class="btn_outline" id="logout">LogOut</button>
+        <img
+          src="./assets/icons/hamburger.svg"
+          alt=""
+          class="hamburger_nav"
+          style="width: 40px; height: 40px"
+        />
       </div>
-
-
     </div>
   </header>
   <main>
@@ -87,22 +101,21 @@
             City that will
             soon go offline.</p>
           <div class="details-actions">
-            <button class="share">
-              <span>Share</span>
-            </button>
+           <div class="share">
+            <img src="./assets/icons/icon_share.svg" alt="">
+            <p>Share</p>
+           </div>
 
             <div class="title-wrapper">
               <p class="title">Prime Video</p>
               <p class="text">Streaming Channels</p>
             </div>
 
-            <button class="btn btn-primary">
+            <button class="btn_outline">
               <span>Watch Now</span>
             </button>
           </div>
-          <button>
-            <a href="">#</a>
-          </button>
+        
         </div>
       </div>
     </section>
@@ -115,109 +128,7 @@
         </div>
 
         <div class="series_content">
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="movie_item">
-            <a href="#" class="movie_item_link">
-              <img src="./assets/images/upcoming-1.png" alt="" class="movie_item_img" />
-            </a>
-
-            <div class="movie_title_wrapper">
-              <a href="#" class="movie_title">The Northman</a>
-              <p class="movie_time">2022</p>
-            </div>
-
-            <div class="movie_meta">
-              <div class="badge_outline">HD</div>
-
-              <div class="movie_meta_right">
-                <div class="movie_meta_duration">
-                  <img src="./assets/icons/icon_clock.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>137 min</p>
-                </div>
-                <div class="movie_meta_rate">
-                  <img src="./assets/icons/star-fill.svg" alt="" style="width: 13px; height: 13px" />
-                  <p>8.5</p>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
@@ -225,7 +136,7 @@
     <section class="section_comment">
       <div class="container">
         <h1 class="comment-title">Comments</h1>
-        <input type="text" placeholder="Leave a comment...">
+        <input type="text" placeholder="Leave a comment..." class="comment_input">
         <div class="list-comment">
           <div class="item-comment">
             <img src="assets/images/Avatar.png" alt="">
@@ -274,7 +185,7 @@
     <section class="footer_top">
       <div class="container">
         <div class="footer_top_brand">
-          <img src="./assets/icons/logo.svg" alt="">
+          <img src="./assets/icons/logo.svg" alt="" />
           <div class="footer_top_brand_link">
             <a href="">HOME</a>
             <a href="">MOVIE</a>
@@ -298,21 +209,36 @@
           <p>© 2023</p>
         </div>
         <div class="footer_bottom_right">
-          <img src="./assets/images/footer-bottom-img.png" alt="">
+          <img src="./assets/images/footer-bottom-img.png" alt="" />
         </div>
       </div>
     </section>
   </footer>
-
   <div class="overlay"></div>
-
+  <div class="header_navbar_mobile">
+    <div class="header_navbar_mobile_top">
+      <img src="./assets/icons/logo.svg" alt="" />
+      <img
+        src="./assets/icons/close.svg"
+        alt=""
+        class="close_navbar_mobile"
+      />
+    </div>
+    <div class="header_navbar_mobile_content">
+      <a href="index.html">HOME</a>
+      <a href="movie.html">MOVIE</a>
+      <a href="TVShow.html">TV SHOW</a>
+      <a href="WebSeries.html">WEB SERIES</a>
+      <a href="prices.html">PRICING</a>
+    </div>
+  </div>
   <div id="sign_in">
     <p class="sign_in_title">Sign in</p>
     <div class="sign_in_container">
       <div class="sign_in_left">
         <form action="" id="form_signIn">
-          <input type="email" id="email_input" placeholder="Email">
-          <input type="password" id="password_input" placeholder="Password">
+          <input type="email" id="email_input" placeholder="Email" />
+          <input type="password" id="password_input" placeholder="Password" />
           <p>Don’t have account? <span class="nav_sign_up">Sign up</span></p>
 
           <button class="btn_outline" type="submit">Sign in</button>
@@ -320,9 +246,15 @@
       </div>
 
       <div class="sign_in_right">
-        <button class="btn_facebook">Login with Facebook</button>
-        <button class="btn_twitter">Login with Twitter</button>
-        <button class="btn_google">Login with Google+</button>
+        <button class="btn_facebook" id="login_with_facebook">
+          Login with Facebook
+        </button>
+        <button class="btn_twitter" id="login_with_twitter">
+          Login with Twitter
+        </button>
+        <button class="btn_google" id="login_with_google">
+          Login with Google+
+        </button>
       </div>
     </div>
   </div>
@@ -332,9 +264,17 @@
     <div class="sign_up_container">
       <div class="sign_up_left">
         <form action="" id="form_signUp">
-          <input type="email" id="email_input" placeholder="Email">
-          <input type="password" id="password_input" placeholder="Password">
-          <input type="password" id="confirm_password_input" placeholder="Confirm Password">
+          <input type="email" id="email_signUp_input" placeholder="Email" />
+          <input
+            type="password"
+            id="password_signUp_input"
+            placeholder="Password"
+          />
+          <input
+            type="password"
+            id="confirm_password_signUp_input"
+            placeholder="Confirm Password"
+          />
           <p>Has account? <span class="nav_sign_in"> Sign in</span></p>
 
           <button class="btn_outline" type="submit">Sign Up</button>
@@ -342,13 +282,21 @@
       </div>
 
       <div class="sign_up_right">
-        <button class="btn_facebook">Login with Facebook</button>
-        <button class="btn_twitter">Login with Twitter</button>
-        <button class="btn_google">Login with Google+</button>
+        <button class="btn_facebook" id="signup_with_facebook">
+          Login with Facebook
+        </button>
+        <button class="btn_twitter" id="signup_with_facebook">
+          Login with Twitter
+        </button>
+        <button class="btn_google" id="signup_with_facebook">
+          Login with Google+
+        </button>
       </div>
     </div>
   </div>
-  <script src="./assets/js/global.js"></script>
+  
+  <script src="./assets/js/movie_detail.js" type="module"></script>
+  <script src="./assets/js/global.js" type="module"></script>
 </body>
 
 </html>

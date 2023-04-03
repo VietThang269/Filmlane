@@ -479,6 +479,10 @@ a {
   .header_navbar_mobile.active {
     transform: translateX(0);
   }
+  .footer_top_brand {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -492,5 +496,13 @@ a {
 
   .header_actions_list {
     display: none;
+  }
+
+  #header .btn_outline {
+    padding: 10px;
+  }
+  .footer_bottom .container {
+    flex-direction: column;
+    gap: 10px;
   }
 }
