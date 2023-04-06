@@ -97,6 +97,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 export const database = getDatabase(app);
 export const auth = getAuth();
 
@@ -214,46 +215,20 @@ function handleLoginFacebook() {
 
   signInWithPopup(auth, provider)
     .then((result) => {
-      // The signed-in user info.
       const user = result.user;
 
-      // This gives you a Facebook Access Token. You can use it to access the Facebook API.
       const credential = FacebookAuthProvider.credentialFromResult(result);
       const accessToken = credential.accessToken;
 
-      // IdP data available using getAdditionalUserInfo(result)
-      // ...
+      hanldeClosePopUp();
+      overlay.classList.remove("active");
     })
     .catch((error) => {
-      // Handle Errors here.
       const errorCode = error.code;
       const errorMessage = error.message;
-      // The email of the user's account used.
       const email = error.customData.email;
-      // The AuthCredential type that was used.
       const credential = FacebookAuthProvider.credentialFromError(error);
-
-      // ...
     });
-  // signInWithPopup(auth, provider)
-  //   .then((result) => {
-  //     const credential = FacebookAuthProvider.credentialFromResult(result);
-  //     const token = credential.accessToken;
-  //     const user = result.user;
-
-  //     console.log("user", user);
-
-  //     hanldeClosePopUp();
-  //     overlay.classList.remove("active");
-  //   })
-  //   .catch((error) => {
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message;
-  //     const email = error.email;
-  //     const credential = FacebookAuthProvider.credentialFromError(error);
-
-  //     alert(errorMessage);
-  //   });
 }
 function handleLoginTwitter() {
   const provider = new TwitterAuthProvider();

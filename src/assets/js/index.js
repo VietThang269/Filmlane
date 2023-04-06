@@ -13,6 +13,7 @@ function getDataUpcomming() {
     const data = snapshot.val();
     const upcommingContent = document.querySelector(".upcoming_content");
     const filterData = data.slice(8, 12);
+    // template string
     filterData.map((item, _) => {
       const data = `
       <div class="movie_item">
@@ -110,7 +111,6 @@ function getDataTopRating() {
 }
 
 // Series Content
-
 function getDataSeries() {
   onValue(dataMovies, (snapshot) => {
     const data = snapshot.val();
