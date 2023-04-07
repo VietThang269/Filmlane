@@ -483,6 +483,14 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+  .sign_up_container,
+  .sign_in_container {
+    flex-direction: column;
+  }
+  #sign_up,
+  #sign_in {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 740px) {
