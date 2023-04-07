@@ -76,7 +76,7 @@ function getDataComment() {
        <div class="item-comment">
          <img src="assets/images/Avatar.png" alt="">
          <div class="people-comment">
-           <h1 class="people-name">${item.email}</h1>
+           <h1 class="people-name">${item.email || item.name}</h1>
            <p class="time-comment">${item.time}</p>
            <p class="text-comment">${item.content}</p>
          </div>
@@ -93,6 +93,7 @@ getDataComment();
 btnSendComment.addEventListener("click", function () {
   const id = localStorage.getItem("user");
   const email = localStorage.getItem("email");
+  const name = localStorage.getItem("name");
   const time = new Date().toUTCString();
 
   if (!id || !email) {
@@ -108,6 +109,7 @@ btnSendComment.addEventListener("click", function () {
   set(ref(database, "comments/" + time), {
     content: dataComment.value,
     email,
+    name,
     time,
   });
 

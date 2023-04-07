@@ -183,12 +183,14 @@ onAuthStateChanged(auth, (user) => {
     const uid = user.uid;
     localStorage.setItem("user", uid);
     localStorage.setItem("email", user.email);
+    localStorage.setItem("name", user.displayName);
 
     logout.classList.add("active");
     btnSignin.classList.add("active");
   } else {
     localStorage.removeItem("user");
     localStorage.removeItem("email");
+    localStorage.removeItem("name");
 
     logout.classList.remove("active");
     btnSignin.classList.remove("active");
