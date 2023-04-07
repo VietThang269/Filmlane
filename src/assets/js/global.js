@@ -67,7 +67,6 @@ import {
   set,
   ref,
   update,
-  onValue,
 } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-database.js";
 
 import {
@@ -79,8 +78,6 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  signInWithRedirect,
-  getRedirectResult,
   signInWithPopup,
 } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-auth.js";
 
@@ -185,11 +182,13 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     const uid = user.uid;
     localStorage.setItem("user", uid);
+    localStorage.setItem("email", user.email);
 
     logout.classList.add("active");
     btnSignin.classList.add("active");
   } else {
     localStorage.removeItem("user");
+    localStorage.removeItem("email");
 
     logout.classList.remove("active");
     btnSignin.classList.remove("active");
@@ -207,11 +206,6 @@ loginWithGoogle.addEventListener("click", handleLoginGoogle);
 
 function handleLoginFacebook() {
   const provider = new FacebookAuthProvider();
-  provider.addScope("user_birthday");
-  auth.languageCode = "it";
-  provider.setCustomParameters({
-    display: "popup",
-  });
 
   signInWithPopup(auth, provider)
     .then((result) => {
@@ -228,6 +222,8 @@ function handleLoginFacebook() {
       const errorMessage = error.message;
       const email = error.customData.email;
       const credential = FacebookAuthProvider.credentialFromError(error);
+
+      alert(errorMessage);
     });
 }
 function handleLoginTwitter() {

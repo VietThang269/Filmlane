@@ -1,6 +1,7 @@
 import {
   ref,
   onValue,
+  set,
 } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-database.js";
 import { database } from "./global.js";
 
@@ -57,3 +58,58 @@ function getDataSeries() {
   });
 }
 getDataSeries();
+
+// Get data comment
+const dataComment = document.querySelector(".comment_input");
+const btnSendComment = document.getElementById("send_comment");
+const listComment = document.querySelector(".list-comment");
+const dataComments = ref(database, "comments");
+function getDataComment() {
+  onValue(dataComments, (snapshot) => {
+    const dataArray = [];
+    const data = snapshot.val();
+    for (const key in data) {
+      dataArray.push(data[key]);
+    }
+    const payload = dataArray.reverse().map(
+      (item, _) => `
+       <div class="item-comment">
+         <img src="assets/images/Avatar.png" alt="">
+         <div class="people-comment">
+           <h1 class="people-name">${item.email}</h1>
+           <p class="time-comment">${item.time}</p>
+           <p class="text-comment">${item.content}</p>
+         </div>
+       </div>
+    `
+    );
+    const newPayload = payload.join("");
+    listComment.innerHTML = newPayload;
+  });
+}
+getDataComment();
+
+// Send data comment
+btnSendComment.addEventListener("click", function () {
+  const id = localStorage.getItem("user");
+  const email = localStorage.getItem("email");
+  const time = new Date().toUTCString();
+
+  if (!id || !email) {
+    alert("Please login first!");
+    return;
+  }
+
+  if (dataComment.value.length <= 0) {
+    alert("Please enter comment first!");
+    return;
+  }
+
+  set(ref(database, "comments/" + time), {
+    content: dataComment.value,
+    email,
+    time,
+  });
+
+  dataComment.value = "";
+});
